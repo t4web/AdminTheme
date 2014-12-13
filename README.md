@@ -2,3 +2,6 @@ Admin
 =====
 
 Admin module
+
+Introduction
+------------
