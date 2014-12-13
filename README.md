@@ -5,6 +5,7 @@ Admin module
 
 Introduction
 ------------
+Propose admin layout from https://github.com/almasaeed2010/AdminLTE
 
 Requirements
 ------------
