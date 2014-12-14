@@ -8,6 +8,5 @@ class DashboardController extends AbstractActionController
 {
     public function defaultAction()
     {
-        die(var_dump(__METHOD__));
     }
 }
