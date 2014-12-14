@@ -1,0 +1,29 @@
+{
+    "name": "t4web/admin",
+    "description": "Admin module for ZF2.",
+    "type": "library",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "zf2"
+    ],
+    "homepage": "https://github.com/t4web/Admin",
+    "authors": [
+        {
+            "name": "Max Gulturyan",
+            "email": "gulturyan@gmail.com",
+            "homepage": "http://about.me/maxgu"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zendframework": "2.3.*"
+    },
+    "require-dev" : {
+        "codeception/codeception": "2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Admin": "src/"
+        }
+    }
+}
