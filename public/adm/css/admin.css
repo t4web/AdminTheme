@@ -1,15 +1,6 @@
 @import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic);
-@import url(//fonts.googleapis.com/css?family=Kaushan+Script);
-/*! 
- *   AdminLTE v1.2
- *   Author: AlmsaeedStudio.com
- *   License: Open source - MIT
- *           Please visit http://opensource.org/licenses/MIT for more information
-!*/
-/*
-    Core: General style
-----------------------------
-*/
+@import url(//fonts.googleapis.com/css?family=Dosis:700);
+
 html,
 body {
   overflow-x: hidden!important;
@@ -520,21 +511,7 @@ body > .header .navbar .nav > li > a > .label {
 body > .header .navbar .nav > li > a:hover > .label {
   top: 3px;
 }
-body > .header .logo {
-  float: left;
-  font-size: 20px;
-  line-height: 50px;
-  text-align: center;
-  padding: 0 10px;
-  width: 220px;
-  font-family: 'Kaushan Script', cursive;
-  font-weight: 500;
-  height: 50px;
-  display: block;
-}
-body > .header .logo .icon {
-  margin-right: 10px;
-}
+
 .right-side > .content-header {
   position: relative;
   padding: 15px 15px 10px 20px;
@@ -3534,4 +3511,57 @@ fieldset[disabled] .btn-vk.active {
 .btn-vk .badge {
   color: #587ea3;
   background-color: #ffffff;
+}
+
+.module .navbar-nav > li > a {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.module.navbar-default {
+    background-color: #f8f8f8;
+}
+.module.navbar .nav a {
+    color: #555;
+}
+.module.navbar {
+    min-height: 32px;
+}
+.module.navbar .navbar-brand {
+    padding: 5px 15px;
+    height: 30px;
+}
+
+.module.navbar .nav > li > a:hover,
+.module.navbar .nav > li > a:active,
+.module.navbar .nav > li > a:focus,
+.module.navbar .nav .open > a,
+.module.navbar .nav .open > a:hover,
+.module.navbar .nav .open > a:focus {
+    background: none;
+    color: #111;
+}
+
+.module.navbar .nav > li.active > a:hover,
+.module.navbar .nav > li.active > a:active,
+.module.navbar .nav > li.active > a:focus {
+    background: #e7e7e7;
+    color: #555;
+}
+
+.navbar .navbar-left ul.nav li a {
+    font-size: 18px;
+}
+
+header.header .navbar-brand {
+    padding: 15px 15px 2px;
+    color: #ffffff;
+    background-color: #367fa9;
+    width: 220px;
+    font-size: 30px;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+}
+
+header.header .navbar-brand img {
+    margin-top: -7px;
 }
