@@ -3565,3 +3565,7 @@ header.header .navbar-brand {
 header.header .navbar-brand img {
     margin-top: -7px;
 }
+
+footer {
+    margin-left: 10px;
+}
