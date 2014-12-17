@@ -63,7 +63,7 @@ class Module implements AutoloaderProviderInterface, ConfigProviderInterface,
     {
         return array(
             'invokables' => array(
-                'Admin\Controller\Admin\Dashboard' => 'Admin\Controller\Admin\DashboardController',
+                'Admin\Controller\Admin\Phpinfo' => 'Admin\Controller\Admin\PhpinfoController',
             )
         );
     }

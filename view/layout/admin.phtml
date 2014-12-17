@@ -21,7 +21,7 @@
             <div class="navbar-left">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">
+                        <a href="/">
                             View site
                             <i class="fa fa-share-square-o"></i>
                         </a>
@@ -75,24 +75,7 @@
 
         <!-- Right side column. Contains the navbar and content of the page -->
         <aside class="right-side">
-            <!-- Content Header (Page header) -->
-            <section class="content-header">
-                <nav class="module navbar navbar-default" role="navigation">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="#"><i class="fa fa-cog"></i> Application</a>
-                    </div>
-
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Php info</a></li>
-                            <li><a href="#">Test mail</a></li>
-                        </ul>
-                    </div><!-- /.navbar-collapse -->
-                </nav>
-            </section>
-
+            <?= $this->content; ?>
             <hr>
             <footer>
                 <p class="text-muted"><a href="https://github.com/t4web/Admin" target="_blank">t4web/admin</a> module, theme by <a href="http://almsaeedstudio.com/" target="_blank">Almsaeed Studio</a></p>

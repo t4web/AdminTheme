@@ -16,7 +16,7 @@ return array(
                     'route'    => '/admin',
                     'defaults' => array(
                         '__NAMESPACE__' => 'Admin\Controller\Admin',
-                        'controller'    => 'Dashboard',
+                        'controller'    => 'Phpinfo',
                         'action'        => 'default',
                     ),
                 ),
