@@ -37,7 +37,7 @@ class Module implements AutoloaderProviderInterface, ConfigProviderInterface,
         $controller = $e->getTarget();
 
         if (!$match instanceof RouteMatch
-            || 0 !== strpos($match->getMatchedRouteName(), 'admin')
+            || false === strpos($match->getMatchedRouteName(), 'admin')
             || $controller->getEvent()->getResult()->terminate()
         ) {
             return;
