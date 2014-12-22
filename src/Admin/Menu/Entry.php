@@ -8,11 +8,6 @@ class Entry {
     /**
      * @var string
      */
-    private $name;
-
-    /**
-     * @var string
-     */
     private $label;
 
     /**
@@ -20,11 +15,16 @@ class Entry {
      */
     private $route;
 
-    function __construct($name, $label, $route)
+    /**
+     * @var string
+     */
+    private $icon;
+
+    function __construct($label, $route, $icon = '')
     {
-        $this->name = $name;
         $this->label = $label;
         $this->route = $route;
+        $this->icon = $icon;
     }
 
     /**
@@ -38,18 +38,17 @@ class Entry {
     /**
      * @return string
      */
-    public function getName()
-    {
-        return $this->name;
-    }
-
-    /**
-     * @return string
-     */
     public function getRoute()
     {
         return $this->route;
     }
 
+    /**
+     * @return string
+     */
+    public function getIcon()
+    {
+        return $this->icon;
+    }
 
-} 
+}

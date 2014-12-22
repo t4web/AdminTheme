@@ -7,6 +7,12 @@ class Navigator {
 
     private $config = [];
 
+    public function __construct()
+    {
+        $this->add(new Entry('Dashboard', 'admin-dashboard', 'fa fa-dashboard'));
+        $this->add(new Entry('Admin', 'admin-default', 'fa fa-cog'));
+    }
+
     /**
      * @param Entry $entry
      */
@@ -29,9 +35,10 @@ class Navigator {
 
         /** @var Entry $entry */
         foreach ($config as $entry) {
-            $resultConfig[$entry->getName()] = [
+            $resultConfig[$entry->getRoute()] = [
                 'label' => $entry->getLabel(),
                 'route' => $entry->getRoute(),
+                'icon' => $entry->getIcon()
             ];
         }
 

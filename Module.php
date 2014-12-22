@@ -5,12 +5,16 @@ use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
 use Zend\ModuleManager\Feature\ConfigProviderInterface;
 use Zend\ModuleManager\Feature\ControllerProviderInterface;
 use Zend\ModuleManager\Feature\BootstrapListenerInterface;
+use Zend\ModuleManager\Feature\ServiceProviderInterface;
 use Zend\EventManager\EventInterface;
 use Zend\Mvc\MvcEvent;
 use Zend\Mvc\Router\RouteMatch;
+use Zend\ServiceManager\ServiceLocatorInterface;
+use Admin\Navigation\Factory as NavigationFactory;
+use Admin\Menu\Navigator;
 
 class Module implements AutoloaderProviderInterface, ConfigProviderInterface,
-                        ControllerProviderInterface,
+                        ControllerProviderInterface, ServiceProviderInterface,
                         BootstrapListenerInterface
 {
 
@@ -58,6 +62,21 @@ class Module implements AutoloaderProviderInterface, ConfigProviderInterface,
             ),
         );
     }
+
+    public function getServiceConfig()
+{
+    return array(
+        'factories' => array(
+            'Admin\Menu\Navigator' => function (ServiceLocatorInterface $sl) {
+                return new Navigator();
+            },
+            'Navigation' => function (ServiceLocatorInterface $sl) {
+                $factory =  new NavigationFactory();
+                return $factory->createService($sl);
+            },
+        )
+    );
+}
 
     public function getControllerConfig()
     {

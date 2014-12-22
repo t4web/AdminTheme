@@ -56,19 +56,9 @@
             <!-- sidebar: style can be found in sidebar.less -->
             <section class="sidebar">
 
-                <!-- sidebar menu: : style can be found in sidebar.less -->
-                <ul class="sidebar-menu">
-                    <li class="active">
-                        <a href="#">
-                            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-cog"></i> <span>Application</span>
-                        </a>
-                    </li>
-                </ul>
+                <?php echo $this->navigation('Navigation')
+                    ->menu()->setUlClass('sidebar-menu')
+                    ->setPartial('partial/navigation'); ?>
             </section>
             <!-- /.sidebar -->
         </aside>
