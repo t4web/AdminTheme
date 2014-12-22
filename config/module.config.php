@@ -17,10 +17,10 @@ return array(
             'admin-dashboard' => array(
                 'type' => 'Literal',
                 'options' => array(
-                    'route'    => '/admin',
+                    'route'    => '/admin/dashboard',
                     'defaults' => array(
                         '__NAMESPACE__' => 'Admin\Controller\Admin',
-                        'controller'    => 'Phpinfo',
+                        'controller'    => 'Dashboard',
                         'action'        => 'default',
                     ),
                 ),
